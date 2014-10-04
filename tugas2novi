@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+main(){
+int s,r,t, jenis;
+float hasil;
+printf("pilihan: ");
+    printf("1. volume kubus\n");
+    printf("2. luas lingkaran\n");
+    printf("3. volume silinder\n");
+    printf("masukan pilihan: ");
+    scanf("%d", &jenis);
+
+switch(jenis)
+    {case 1:
+        printf("masukan nilai sisi: s");
+        scanf("%d", &s);
+        hasil = s * s * s;
+        printf("hasil=%d\n", s * s * s);
+        break;
+    case 2:
+        printf("masukan panjang jari-jari lingkaran: r");
+        scanf("%d", &r);
+        hasil = 3.14*r*r;
+        printf("hasil=%d\n", 3.14*r*r);
+        break;
+    case 3:
+        printf("masukan panjang jari-jari lingkaran dan tinggi silinder: t");
+        scanf("%d", &t);
+        hasil = 3.14*r*t;
+        printf("hasil=%d\n", 3.14*r*t);
+        break;
+
+    default:
+        printf("error");
+
+    }
+}
